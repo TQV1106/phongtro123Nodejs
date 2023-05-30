@@ -1,7 +1,6 @@
 import * as authService from "../services/auth";
 
 const register = async (req, res) => {
-  console.log("check req: ", req.body);
   const { name, phone, password } = req.body;
   try {
     if (!name || !phone || !password) {
